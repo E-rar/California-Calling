@@ -1,0 +1,353 @@
+/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@font-face {
+    font-family: Larish;
+    src: url(../fonts/LarishNeueSemibold.woff);
+  }
+
+@font-face {
+    font-family: LarishBold;
+    src: url(../fonts/Larish\ Neue\ Semibold.woff2);
+  }
+
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Larish,LarischBold,Work Sans;
+    background-color:#000;
+    color:#fff;
+    overflow-x: hidden;
+}
+.white{
+    background-color: #fff;
+    color:#000;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+a:hover{
+    background:#fff;
+    color:#000;
+    transition:ease-in-out 1s;
+}
+p{
+    font-family:Work Sans;
+}
+#hero{
+    height:100vh;
+}
+#line{
+    width:50vw;
+    height:30vh;
+    border-right:#fff 0.1vh solid;
+    display:block;
+}
+h1{
+    font-size:7em;
+    text-align:center;
+    line-height:1vh;
+    margin:5%;
+
+}
+h1:nth-child(2){
+    -webkit-text-stroke: 0.1vh #fff;
+    color:black;
+}
+h5{
+    font-size:1em;
+    font-family:Work Sans;
+    text-align:center;
+    margin-top:3%;
+}
+
+#heroFooter{
+    display:flex;
+    justify-content:space-between;
+    margin:10% 10% 0 10%;
+    
+}
+#heroFooter a{
+    border:0.2vh solid #fff;
+    padding:1% 2.5%;
+    font-size:1.2em;
+}
+/*________Nächste Schwarze Section______________*/
+section:nth-child(2) h2{
+    font-size:7em;
+    margin:10% 0 0 10%;
+
+}
+/*_______schwarze section mit den dunklen background__________*/
+section:nth-child(3){
+    background:url("../img/map.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+}
+section:nth-child(3) h2{
+    font-size:7em;
+    margin:0% 0 0 10%;
+
+}
+h6{
+    margin: 0% 0 0 10%;
+    font-size:2em;
+    font-family:Work Sans; 
+}
+section:nth-child(3) h6:first-child{
+    margin:10% 0 0 10%;
+}
+section:nth-child(3) h2:last-child{
+    margin:0 0 10% 10%;
+}
+/*__________________weiße Section mit den überlappenden bildern */
+section:nth-child(4){
+    height:230vh;
+    
+}
+section:nth-child(4) img:first-child{
+    width:25%;
+    position:relative;
+    z-index:2;
+    top:-15vh;
+    right:-60vw;
+    
+}
+section:nth-child(4) div{
+    height:80vh;
+    position:relative;
+}
+section:nth-child(4) div img:nth-child(1){
+    width:25%;
+    position:absolute;
+    top:0;
+    left:5%;
+    
+}
+section:nth-child(4) div img:last-child{
+    width:25%;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+section:nth-child(4) div article{
+    padding:10% 27% 0 35%;
+}
+section:nth-child(4) div article h3{
+    font-size:5.5em;
+}
+section:nth-child(4) div article p{
+    line-height:4vh;
+    font-family:Work Sans;
+    font-weight: bold;
+}
+#second{
+    height:50vh;
+    margin:0 15% 0 8%;
+}
+#second img:first-child{
+    width:30%;
+}
+#second img:last-child{
+    width:30%;
+}
+#third {
+    position:relative;
+    height:30vh;
+}
+#third img{
+    position:absolute;
+    top:15%;
+    left:0;
+}
+#third p{
+    font-weight: bold;
+    width:35%;
+    line-height:4vh;
+    padding-left:35%;
+    padding-top:10%;
+}
+section:nth-child(4) img:last-child{
+    width:35%;
+    position:relative;
+    z-index:2;
+    bottom:-10vh;
+    right:-50vw;
+}
+/*________Nächste schwarze section__________ */
+
+.article1 { /*article kommt genau so in der unteren section nochmal deswegen gleich durch gestylt*/
+    margin:10% 10% 10% 10%;
+}
+.article1 p:first-child{
+    font-size:1.5em;
+    margin:15% 0 0 0;
+}
+.article1 h2{
+    font-size:6em;
+    display:inline-block;
+}
+.article1 p:nth-child(3){
+    font-size:2em;
+    font-family:LarishBold;
+    width:50%;
+    display:inline-block;
+    padding-left:20%;
+}
+.sub{
+    font-size:0.6em;
+    padding:15% 0;
+    font-family:Work Sans;
+}
+section:nth-child(5) div{
+    text-align:center;
+    position:relative;
+    height:60vh;
+}
+section:nth-child(5) div img:first-child{
+    width:50%;
+    position:absolute;
+    left:10%;
+    bottom:-45%;
+}
+section:nth-child(5) div img:last-child{
+    width:30%;
+    position:absolute;
+    z-index:3;
+    left:57%;
+    bottom:-35%;
+
+}
+/*_____________SECTION DIE WIEDER WEIß IST________*/
+
+#circle{
+    position:relative;
+    height:50vh;
+}
+@keyframes spin{
+    0%,100%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+section:nth-child(6){
+    position:relative;
+    z-index:1;
+}
+#circle img{
+    width:50%;
+    position:absolute;
+    z-index:0;
+    top:-40%;
+    right:-20%;
+    animation:spin 5s infinite;
+    animation-timing-function: linear; 
+}
+section:nth-child(6) div{
+    height:100vh;
+    position:relative;
+}
+section:nth-child(6) div img:first-child{
+    
+    
+    width:50%;
+    position:absolute;
+    z-index:2;
+    right:10%;
+    bottom:10%; 
+
+}
+section:nth-child(6) div img:last-child{
+    width:27%;
+    position:absolute;
+    z-index:3;
+    right:57%;
+    bottom:20%;
+}
+/*____________FOOTER_______*/
+#banner{
+    position:relative;
+    /* height:50vh; */
+}
+footer article p:first-of-type{
+    padding:10% 0 0 10%;
+    font-size:1.5em;
+}
+footer article p:last-of-type{
+    font-size:2em;
+    font-family:LarishBold;
+    display:inline-block;
+    padding:2% 60% 2% 10%;
+    line-height:5vh;
+}
+footer article a {
+    border:0.2vh solid #fff;
+    padding:1% 2.5%;
+    font-size:1.2em;
+    margin:1% 0% 20% 10%;
+    
+}
+
+#banner2{
+    transform:rotate(45deg);
+    background-color:#fff;
+    height:15vh;
+    width:200vw;
+    position:relative;
+    top:-40%;
+    right:40%;
+    overflow:hidden;
+}
+@keyframes bmove{
+    0%,100%{
+        transform:translateX(-80vh);
+    }
+    50%{
+        transform:translateX(120vh);
+    }
+}
+#banner-text{
+    color:#000;
+    text-align:right;
+    font-size:6.5em;
+    animation:bmove 10s infinite;
+    animation-timing-function: linear;
+    overflow: hidden;
+
+}
+.webkit{/*die 2019 weiß mit schwarzen rand*/
+    -webkit-text-stroke: 0.1vh #000;
+    color:#fff;
+}
+#social{
+    height: 10vh;
+    display:flex;
+    justify-content: space-between;
+}
+#social ul{
+    display:flex;
+    list-style:none;
+    
+}
+#left{
+    padding:10%;
+}
+#right{
+    padding:10%;
+}
+#social p{
+    padding:10% 0 0 0;
+    font-size:1.5em;
+}
+#social a:hover{
+    background-color:rgba(0, 0, 0, 0)
+}
+#social ul li{
+    padding:0 2%;
+}
