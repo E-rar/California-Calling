@@ -213,6 +213,7 @@ section:nth-child(5) div img:first-child{
     position:absolute;
     left:10%;
     bottom:-45%;
+    z-index:4;
 }
 section:nth-child(5) div img:last-child{
     width:30%;
@@ -220,6 +221,7 @@ section:nth-child(5) div img:last-child{
     z-index:3;
     left:57%;
     bottom:-35%;
+    z-index:5;
 
 }
 /*_____________SECTION DIE WIEDER WEIß IST________*/
@@ -271,6 +273,11 @@ section:nth-child(6) div img:last-child{
     bottom:20%;
 }
 /*____________FOOTER_______*/
+footer{
+    overflow:hidden;
+    
+}
+
 #banner{
     position:relative;
     /* height:50vh; */
@@ -326,7 +333,7 @@ footer article a {
     color:#fff;
 }
 #social{
-    height: 10vh;
+    height: 40vh;
     display:flex;
     justify-content: space-between;
 }
@@ -344,6 +351,9 @@ footer article a {
 #social p{
     padding:10% 0 0 0;
     font-size:1.5em;
+}
+#social ul img:hover{
+    transform:scale(1.1);
 }
 #social a:hover{
     background-color:rgba(0, 0, 0, 0)
